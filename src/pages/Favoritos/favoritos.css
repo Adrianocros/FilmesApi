@@ -1,0 +1,113 @@
+.fav-container{
+    border: 3px solid black;
+    border-radius: 5px;
+    margin:15px 19px;
+}
+
+.meus-filmes{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meus-filmes h1{
+    margin-bottom: 24px;
+}
+.meus-filmes span{
+    font-size: 20px;
+}
+
+.meus-filmes ul{
+    width:1150px;
+}
+
+.meus-filmes ul li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.meus-filmes div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meus-filmes div a{
+    text-decoration: none;
+    color: #116feb;
+    margin-right: 16px;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #163ec4;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 11px;
+    padding: 10px;
+    width: 190px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    position: relative;
+    transition: 0.5s;
+    
+}
+
+.button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    
+}
+
+.button:hover span {
+    padding-right: 25px;
+    
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.btn-detalhes{
+    color: #fffd;
+}
+
+@media screen and (max-width: 940px) {
+
+    .meus-filmes ul{
+        width:339px;
+    }
+    
+    .meus-filmes h1{
+        font-size: 25px;
+    }
+
+    .meus-filmes span{
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .button {
+     
+        font-size: 9px;
+        padding: 10px;
+        width: 90px;
+    
+        margin: 5px;
+    }
+
+
+}
